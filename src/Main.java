@@ -5,19 +5,19 @@ public class Main {
         ymnoj(3,4);
         delen(48,6);
     }
-    public static void summa(int a,int b){
+    static void summa(int a,int b){
         int r = a+b;
         System.out.println(r);
     }
-    public static void vichit(int a,int b){
+    static void vichit(int a,int b){
         int r = a-b;
         System.out.println(r);
     }
-    public static void ymnoj(int a,int b){
+    static void ymnoj(int a,int b){
         int r = a*b;
         System.out.println(r);
     }
-    public static void delen(int a,int b){
+    static void delen(int a,int b){
         int r = a/b;
         System.out.println(r);
     }
