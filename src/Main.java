@@ -1,24 +1,36 @@
 public class Main {
     public static void main(String[] args) {
-        summa(7,5);
-        vichit(9,1);
-        ymnoj(3,4);
-        delen(48,6);
+
+        System.out.println(info(""));
+        System.out.println(summa(7,5));
+        System.out.println(vichit(9,1));
+        System.out.println(ymnoj(3,4));
+        System.out.println(delen(48,6));
+        System.out.println(sum(3,2));
     }
-    static void summa(int a,int b){
+    static int summa(int a,int b){
         int r = a+b;
-        System.out.println(r);
+        return r;
     }
-    static void vichit(int a,int b){
+    static int vichit(int a,int b){
         int r = a-b;
-        System.out.println(r);
+        return r;
     }
-    static void ymnoj(int a,int b){
+    static int ymnoj(int a,int b){
         int r = a*b;
-        System.out.println(r);
+        return r;
     }
-    static void delen(int a,int b){
+    static int delen(int a,int b){
         int r = a/b;
-        System.out.println(r);
+        return r;
+    }
+    static String info(String text){
+        String r1 = "Alolololo";
+        String r2 ="Oxoxo";
+        String r3 =r1+"/"+r2;
+        return r3;
+    }
+    static int sum(int a, int b){
+        return a + b;//это ж тож самое, но лучше, т.к. 1 строка вместо 2?
     }
 }
