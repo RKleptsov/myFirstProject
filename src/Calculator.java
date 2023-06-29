@@ -16,6 +16,7 @@ public class Calculator {
                 int d = (a - c) / b;
                 return d;
             } else return a / b;
+
         }
     }
 

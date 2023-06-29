@@ -1,17 +1,19 @@
 import java.util.Random;
 
 public class Generator {
-   static int getIntGenerator (int min, int max) {
-      Random random = new Random();
-      return random.nextInt(max - min + 1) + min;
-   }
-//   public void Gener() {
-//      Random random = new Random();
-//      for (int i = 0; i<100; i++) {
-//         System.out.println(random.nextInt(10));
-//      }
-//   }
+    DataProvider dataProvider = new DataProvider();
+    public int[] generateRandomArray(int n) {
+        Random random = new Random();
+        int [] array = new int[n];
+        for (int i = 0; i<n; i++) {
+            array[i] = random.nextInt(101);
+        }
+        return array;
+    }
 }
+
+
+
 
 
 
