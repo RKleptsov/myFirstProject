@@ -1,9 +1,9 @@
 public class DataProvider {
 
-    private int[] array1 = new int[] {};
-    private int[] array2 = new int[] {};
-    private int[] array3 = new int[] {};
-    private int[] array4 = new int[] {};
+    private int[] array1 = new int[]{};
+    private int[] array2 = new int[]{};
+    private int[] array3 = new int[]{};
+    private int[] array4 = new int[]{};
 
     public void setArray1(int[] array1) {
         this.array1 = array1;
@@ -24,17 +24,28 @@ public class DataProvider {
     public int[] getArray1() {
         return array1;
     }
+
     public int[] getArray2() {
         return array2;
     }
+
     public int[] getArray3() {
         return array3;
     }
+
     public int[] getArray4() {
         return array4;
     }
-}
 
+    public String str;
+
+    public void setStr(String str) {
+        this.str = str;
+    }
+    public String getStr() {
+        return str;
+    }
+}
 
 
 

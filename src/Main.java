@@ -6,6 +6,9 @@ public class Main {
       Calculator calculator = new Calculator();
       DataProvider data = new DataProvider();
       Generator generator = new Generator();
+      StringProcess digits = new StringProcess();
+      System.out.println(generator.generatorStroki(10));
+      System.out.println(digits.numberDigits("ffds322d11"));
 
         data.setArray1(generator.generateRandomArray(4));
         System.out.println(Arrays.toString(data.getArray1()));
@@ -37,4 +40,5 @@ public class Main {
         }
     }
 }
+
 
