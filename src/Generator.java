@@ -9,7 +9,6 @@ public class Generator {
         }
         return array;
     }
-
     public String generatorStroki(int n) {
         Random random = new Random();
         String stroka = "";
