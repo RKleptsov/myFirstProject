@@ -7,8 +7,10 @@ public class Main {
       DataProvider data = new DataProvider();
       Generator generator = new Generator();
       StringProcess digits = new StringProcess();
-      System.out.println(generator.generatorStroki(10));
-      System.out.println(digits.numberDigits("ffds322d11"));
+
+        data.setStr(generator.generatorStroki(10));
+        System.out.println(data.getStr());
+        System.out.println(digits.numberDigits(data.getStr()));
 
         data.setArray1(generator.generateRandomArray(4));
         System.out.println(Arrays.toString(data.getArray1()));
