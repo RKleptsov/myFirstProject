@@ -15,7 +15,7 @@ public class Generator {
         for (int i = 0; i < n; i++) {
             int monetka = random.nextInt(2);
             if (monetka == 0) {
-                char randomChar = (char) (random.nextInt(32) + 'а');
+                char randomChar = (char) (random.nextInt(26) + 'a');
                 stroka += randomChar;
             } else {
                 int randomNumber = random.nextInt(10);

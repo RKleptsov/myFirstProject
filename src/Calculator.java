@@ -1,5 +1,5 @@
 
-public class Calculator {
+public class Calculator  {
         int summa (int a, int b) {
             return a + b;
         }
@@ -9,7 +9,10 @@ public class Calculator {
         int ymnoj (int a, int b) {
             return a * b;
         }
-        int delen (int a, int b) {
+        int delen (int a, int b) throws Errors {
+            if (b == 0) {
+                throw new Errors(Enum.ByZero.getError());
+            }
             if (a % b != 0) {
                 int c = a % b;
                 int d = (a - c) / b;
@@ -17,10 +20,4 @@ public class Calculator {
             } else return a / b;
         }
     }
-
-
-
-
-
-
 
