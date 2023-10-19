@@ -34,6 +34,13 @@ public class DataProvider {
     public String getStr() {
         return str;
     }
+    public char simvol;
+//    public void setChar (char simvol) {
+//        this.simvol = simvol;
+//    }
+//    public char getChar () {
+//        return simvol;
+//    }
 }
 
 

@@ -9,6 +9,7 @@ public class Generator {
         }
         return array;
     }
+
     public String generatorStroki(int n) {
         Random random = new Random();
         String stroka = "";
@@ -24,10 +25,16 @@ public class Generator {
         }
         return stroka.toString();
     }
+    public char generateRandomCharacter() throws Errors {
+        Random random = new Random();
+        int randomValue = random.nextInt(36);
+        char randomChar;
+        if (randomValue < 10) {
+            randomChar = (char) (randomValue + '0');
+        } else {
+            randomChar = (char) (randomValue - 10 + 'a');
+        }
+        return randomChar;
+    }
 }
-
-
-
-
-
 
