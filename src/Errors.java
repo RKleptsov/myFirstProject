@@ -1,5 +1,5 @@
 public class Errors extends RuntimeException {
-    private static int errorCount = 0;
+    public static int errorCount = 0;
 
     public Errors(String a) {
         super(a);
