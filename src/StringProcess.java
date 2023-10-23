@@ -5,7 +5,6 @@ public class StringProcess {
             char currentChar = str.charAt(i);
             if (Character.isDigit(currentChar)) {
                 digit++;
-
                 if (i >= 2 && Character.isDigit(str.charAt(i - 1)) && Character.isDigit(str.charAt(i - 2))) {
                     throw new Errors(Enum.ThreeNumbersInLine.getError());
                 }

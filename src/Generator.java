@@ -1,14 +1,6 @@
 import java.util.Random;
 
 public class Generator {
-    public int[] generateRandomArray(int n) {
-        Random random = new Random();
-        int[] array = new int[n];
-        for (int i = 0; i < n; i++) {
-            array[i] = random.nextInt(101);
-        }
-        return array;
-    }
     public String generatorStroki(int n) {
         Random random = new Random();
         String stroka = "";
@@ -24,10 +16,16 @@ public class Generator {
         }
         return stroka.toString();
     }
+    public char generateRandomCharacter() {
+        Random random = new Random();
+        int randomValue = random.nextInt(36);
+        char randomChar;
+        if (randomValue < 10) {
+            randomChar = (char) (randomValue + '0');
+        } else {
+            randomChar = (char) (randomValue - 10 + 'a');
+        }
+        return randomChar;
+    }
 }
-
-
-
-
-
 
