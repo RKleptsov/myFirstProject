@@ -1,11 +1,22 @@
-import java.util.*;
-
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
 public class Main {
   public static void main(String[] args) {
     DataProvider data = new DataProvider();
     Generator generator = new Generator();
     StringProcess digits = new StringProcess();
     data.setStr(generator.generatorStroki(10));
+
+    CsvManipulator csvManipulator = new CsvManipulator();
+    csvManipulator.readCsvFile("E://JavaFiles//aaff.csv");
+    csvManipulator.createNewCsv("E://JavaFiles//new_file.csv");
+    csvManipulator.updateCsv(0, 0, "1");
+    csvManipulator.editCsv("E://JavaFiles//newFFF.csv");
+    csvManipulator.searchCsvFile("E://JavaFiles//newFFF.csv");
+    csvManipulator.deleteCsv("E://JavaFiles//new_file.csv");
+
     try {
       digits.numberDigits(data.getStr());
     } catch (Errors e) {
